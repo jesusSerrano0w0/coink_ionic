@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.login-container{
+    padding-top: 40%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonsGroup{
+    position: fixed;
+    bottom: 10pt;
+    left: 0;
+    width: 100%;
+    
+}
+.buttonRegister {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 40%;
+    --background: #1EEA00;
+    color: #004B40;
+    margin: 8pt;
+    
+}
+
+.buttonLogin {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    --background: #004B40;
+    margin: 8pt;
+}
+
+.textInfo{
+    font-size: 18pt;
+    margin-top: 30pt;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    text-align: center;
+    color:#1EEA00;
+    font-family: Montserrat, Bold;
+
+}
+
+ion-img {
+    width: 125pt;
+    height: 154pt;
+}
+
+.icon-mid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 144pt;
+}

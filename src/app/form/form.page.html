@@ -1,0 +1,68 @@
+<app-header [step2]="step2" [titleStep]="titleStep"></app-header>
+<ion-content>
+    <app-info [info]="info" [title]="title" [normalIco]="true"></app-info>
+    <form [formGroup]="formulario" (ngSubmit)="saveData()">
+         <ion-list class="formData">
+            <div class="titleForm">
+                Documento de identidad
+            </div>
+            <ion-item>
+                <ion-select label="Tipo de documento" formControlName="tipoDocumento" label-placement="floating">
+                    <ion-select-option value="apple" *ngFor="let tiposDocumento of tiposDocumentos"
+                        [value]="tiposDocumento.id">{{tiposDocumento.description}}</ion-select-option>
+                </ion-select>
+            </ion-item>
+            <ion-item class="inputform">
+                <ion-input id="custom-input" label="Número de documento" formControlName="numeroDocumento" labelPlacement="floating"
+                    maxlength="20"></ion-input>
+            </ion-item>
+            <ion-item class="inputform">
+                <ion-input id="custom-input" label="Fecha de expedición del documento" formControlName="fechaDocumento" labelPlacement="floating"
+                    maxlength="20"></ion-input>
+            </ion-item>
+            <ion-item class="inputform">
+                <ion-input id="custom-input" label="Fecha de nacimiento" formControlName="fechaNacimiento" labelPlacement="floating"
+                    maxlength="20"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-select label="Genero" formControlName="genero" label-placement="floating">
+                    <ion-select-option value="F">Femenino</ion-select-option>
+                    <ion-select-option value="M">Masculino</ion-select-option>
+
+                </ion-select>
+            </ion-item>
+        </ion-list>
+
+        <ion-list class="formData">
+            <div class="titleForm">
+                Configura tu cuenta
+            </div>
+            <ion-item class="inputform">
+                <ion-input id="custom-input" label="Correo electrónico" formControlName="correo" labelPlacement="floating"
+                    maxlength="20"></ion-input>
+            </ion-item>
+            <ion-item class="inputform">
+                <ion-input id="custom-input" label="Confirmar correo electrónico" formControlName="confirmarCorreo" labelPlacement="floating"
+                    maxlength="20"></ion-input>
+            </ion-item>
+            <ion-item class="inputform">
+                <ion-input id="custom-input" label="PIN de seguridad" labelPlacement="floating" formControlName="pinSeguridad" maxlength="20">
+                    <ion-button fill="clear" slot="end" aria-label="Show/hide">
+                        <ion-icon slot="icon-only" name="eye" aria-hidden="true" color="dark"></ion-icon>
+                    </ion-button>
+                </ion-input>
+            </ion-item>
+            <ion-item class="inputform">
+                <ion-input id="custom-input" label="Confirmar PIN de seguridad" formControlName="confirmarPin" labelPlacement="floating"
+                    maxlength="20">
+                    <ion-button fill="clear" slot="end" aria-label="Show/hide">
+                        <ion-icon slot="icon-only" name="eye" aria-hidden="true" color="dark"></ion-icon>
+                    </ion-button>
+                </ion-input>
+            </ion-item>
+
+            <ion-button expand="block" type="submit" class="buttonRegister shadow p-3 mb-5 bg-white rounded" 
+                shape="round">SIGUIENTE</ion-button>
+        </ion-list>
+    </form>
+</ion-content>

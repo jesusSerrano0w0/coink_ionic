@@ -1,0 +1,20 @@
+
+
+
+  <div class="infoCell">
+    <ion-row>
+        <ion-col size="auto">
+            <div class="iconCell" *ngIf="normalIco">
+                 <ion-img src="../../assets/Oink.svg" alt="logo"></ion-img>
+            </div>     
+            <div class="iconCell"  *ngIf="icoSecurity" >
+                <ion-img src="../../assets/OinkPolicia.svg" alt="logo"></ion-img>
+           </div>       
+        </ion-col>
+        <ion-col>
+            <div class="titleCell">{{title}}</div><br>
+            <div class="textCell">{{info}}</div>
+        </ion-col>
+    </ion-row>
+</div>
+

@@ -1,0 +1,33 @@
+ion-header{
+    padding-bottom: 5px;
+    box-shadow: 
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.toolbar{
+    background-color: #004B40;
+}
+.steps{
+    width: 188pt;
+    height: 18pt;
+    align-items: center;
+    margin-top: 3pt;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.titleStep{
+    font-family: Montserrat, Bold;
+    color: #004B40;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 0%;
+    font-size: 16pt;
+    
+}
+.backbutton{
+    width: 25pt;
+
+}

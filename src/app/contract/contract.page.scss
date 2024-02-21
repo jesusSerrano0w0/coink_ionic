@@ -1,0 +1,50 @@
+.contentContract{
+    margin-top: 25pt;
+    margin-left: 25pt;
+    margin-right: 25pt;
+}
+.titleContract{
+    font-family: Montserrat, Bold;
+    font-size: 16pt;
+    text-align: left;
+    color: #004B40;
+}
+.textContract{
+    font-family: Avenir LT Std, 55 Roman;
+    font-size: 14pt;
+    text-align: left;
+    color: #323232;
+}
+.titleTermsAcept{
+    font-family: Montserrat, Bold;
+    font-size: 16pt;
+    text-align: left;
+    color: #004B40;
+    border-bottom: 2px solid #004B40;
+    display: inline-block;
+    margin-bottom: 8pt;
+}
+.chek{
+    margin-top: 8pt;
+    font-family:Avenir LT Std, 55 Roman;
+    font-size: 13pt;
+}
+ion-checkbox {
+    --size: 16pt;
+    --checkbox-background-checked: #1EEB00;
+  }
+  
+  ion-checkbox::part(container) {
+    border-radius: 6px;
+    border: 2px solid #1EEB00;
+  }
+
+  .buttonRegister {
+  
+    border-radius: 40%;
+    --background: #1EEA00;
+    color: #004B40;
+    margin-top: 30pt;
+    margin-bottom: 40pt;
+    
+}

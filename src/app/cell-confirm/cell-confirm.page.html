@@ -1,0 +1,10 @@
+<app-header [step1]="step" [titleStep]="titleStep"></app-header>
+<ion-content>
+  <app-info [info]="info" [title]="title" [normalIco]="true"></app-info>
+  <div class="intputCell">
+    <ion-item>
+      <ion-input style="text-align: center;font-size: 24pt; color: #AAAAAA;"  type="tel" placeholder="(XXX - XXXXXX)"></ion-input>
+    </ion-item>
+  </div>
+  <ion-button expand="block" class="buttonRegister shadow p-3 mb-5 bg-white rounded" (click)="goToNext()"  shape="round">SIGUIENTE</ion-button>
+</ion-content >
